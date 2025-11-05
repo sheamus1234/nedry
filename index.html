@@ -1,36 +1,19 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<head>
-  <title>Ah Ah Ah, you didn't say the magic word!</title>
-</head>
 <html>
-  <body>
-    <div class="container" onclick="playSound()">
-      <div class="nedry">
-        <img class="nedry-body" src="resources/body.png">
-        <img class="nedry-head" src="resources/head.png">
-        <img class="nedry-hand" src="resources/hand.png">
-      </div>
-      <audio id="player" autoplay loop>
-        <source src="resources/ahahah.mp3" type="audio/mp3">
-      </audio>
-      <input id="unmuteButton" type="button" onclick="playSound()" value="🔈 Unmute" />
-    </div>
-  </body>
-  <link rel="stylesheet" href="resources/style.css">
-
-  <script>
-    const sound = document.getElementById('player');
-
-    sound.addEventListener('play', (event) => {
-      document.getElementById("unmuteButton").hidden = true;
-    });
-    sound.addEventListener('pause', (event) => {
-      document.getElementById("unmuteButton").hidden = false;
-    });
-
-    function playSound() {
-      document.getElementById("player").play();
-    }
-  </script>
+<head>
+<title>Access Denied</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-display-middle">
+<h1 class="w3-jumbo w3-animate-top w3-center"><code>Access Denied</code></h1>
+<hr class="w3-border-white w3-animate-left" style="margin:auto;width:50%">
+<h4 class="w3-center w3-animate-right">You dont have permission to view this page.</h4>
+  <h5 class="w3-center w3-animate-right">Please contact your systems administrator. </h5>
+<h6 class="w3-center w3-animate-zoom">error code:403 forbidden</h6>
+</div>
+</body>
 </html>
